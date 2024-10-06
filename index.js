@@ -24,7 +24,7 @@ fs.readdir(directoryPath, (err, files) => {
 
         // Obfuscate the JavaScript content
         const obfuscationResult = JavaScriptObfuscator.obfuscate(data, {
-          compact: false,
+          compact: true,
           controlFlowFlattening: true,
           controlFlowFlatteningThreshold: 1,
           numbersToExpressions: true,
